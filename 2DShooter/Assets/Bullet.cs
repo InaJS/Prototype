@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     {
         GameObject Effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
         //Quaternion.Identity being the default rotation.
-        Destroy(Effect, 5f);
+        Destroy(Effect, 1f);
         Destroy(gameObject);
     }
 }
