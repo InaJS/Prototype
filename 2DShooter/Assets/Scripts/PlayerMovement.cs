@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.localPosition += Vector3.right * Speed * Horizontal;
         transform.localPosition += Vector3.up * Speed * Vertical;
+        Debug.Log("I should be moving here");
     }
     
     //Player movement
