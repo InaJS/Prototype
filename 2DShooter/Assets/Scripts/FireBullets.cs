@@ -29,3 +29,5 @@ public class FireBullets : MonoBehaviour
         rb.AddForce(FirePoint.up * BulletForce, ForceMode2D.Impulse);
     }
 }
+
+//Elina Salmenranta

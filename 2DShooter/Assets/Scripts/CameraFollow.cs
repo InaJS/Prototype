@@ -13,3 +13,5 @@ public class CameraFollow : MonoBehaviour
     }
     
 }
+
+//Elina Salmenranta
