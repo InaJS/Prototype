@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 727742426}
   - component: {fileID: 727742427}
   - component: {fileID: 727742428}
+  - component: {fileID: 727742429}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -304,6 +305,7 @@ Transform:
   m_LocalPosition: {x: 1.42, y: -0.2752644, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1585547571}
   - {fileID: 1297078838}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -484,6 +486,21 @@ MonoBehaviour:
   MoveSpeed: 5
   rb: {fileID: 727742425}
   cam: {fileID: 519420031}
+--- !u!114 &727742429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727742421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112a6b86a0fa98546b7371e219e60e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirePoint: {fileID: 1585547571}
+  BulletPrefab: {fileID: 1248340275675301856, guid: 30353b4c0d737f94f9c224184bac0665, type: 3}
+  BulletForce: 50
 --- !u!1 &1297078837
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,11 +527,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297078837}
   m_LocalRotation: {x: -0, y: -0.70406055, z: -0, w: 0.71014}
-  m_LocalPosition: {x: -0.33, y: 0.0052644014, z: 0.27}
-  m_LocalScale: {x: 0.0956693, y: 0.0920817, z: 0.0956693}
+  m_LocalPosition: {x: -0.33000004, y: 0.0052644014, z: 0.27}
+  m_LocalScale: {x: 0.095669284, y: 0.0920817, z: 0.095669284}
   m_Children: []
   m_Father: {fileID: 727742423}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -89.507, z: 0}
 --- !u!199 &1297078839
 ParticleSystemRenderer:
@@ -5288,6 +5305,36 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1585547570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585547571}
+  m_Layer: 0
+  m_Name: FiringPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585547571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585547570}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70519644, w: 0.709012}
+  m_LocalPosition: {x: 0.41999996, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 727742423}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.691}
 --- !u!1 &1956436873
 GameObject:
   m_ObjectHideFlags: 0
