@@ -31,3 +31,4 @@ public class PlayerMovement : MonoBehaviour
 
 //In PlayerInput in the inspector for the player. Events-Player-Move. Put this in the Move(CallbackContext)
 //And the function as playerMovement-Move.
+//It's not picking up on the Input from the keyboard...
