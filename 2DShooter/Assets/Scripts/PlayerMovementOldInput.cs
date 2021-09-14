@@ -33,7 +33,7 @@ public class PlayerMovementOldInput : MonoBehaviour
 
         //Aim with mouse
         Vector2 LookDir = MousePos - rb.position;
-        float Angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg;
+        float Angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg -90f;
         rb.rotation = Angle;
     }
 }
