@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 727742427}
   - component: {fileID: 727742428}
   - component: {fileID: 727742429}
+  - component: {fileID: 727742430}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -889,6 +890,21 @@ MonoBehaviour:
   FirePoint: {fileID: 1585547571}
   BulletPrefab: {fileID: 1248340275675301856, guid: 30353b4c0d737f94f9c224184bac0665, type: 3}
   BulletForce: 50
+--- !u!114 &727742430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727742421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9dceba79850b0545b768d28a8c33ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 10
+  CurrentHealth: 10
+  HealthBar: {fileID: 1047858090}
 --- !u!1 &906651281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,10 +1048,10 @@ RectTransform:
   m_Father: {fileID: 1347192722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410.412, y: 234.65405}
-  m_SizeDelta: {x: 265.4954, y: 37.1599}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 139.58801, y: -25.345947}
+  m_SizeDelta: {x: 265.4954, y: 37.159912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047858090
 MonoBehaviour:
@@ -1050,6 +1066,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slider: {fileID: 1047858091}
+  Gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0.0992074, a: 1}
+    key1: {r: 0.97355604, g: 1, b: 0.6367924, a: 1}
+    key2: {r: 0.4575472, g: 1, b: 0.86760247, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 10987
+    ctime1: 25058
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 1157
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 3
+  Fill: {fileID: 1240042797}
 --- !u!114 &1047858091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6077,7 +6123,7 @@ GameObject:
   - component: {fileID: 1347192720}
   - component: {fileID: 1347192719}
   m_Layer: 5
-  m_Name: Health bar UI
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
