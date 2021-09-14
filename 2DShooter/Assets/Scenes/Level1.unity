@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 360672175}
   - component: {fileID: 360672174}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: BlueSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6362,7 +6362,7 @@ GameObject:
   - component: {fileID: 1931192977}
   - component: {fileID: 1931192976}
   m_Layer: 0
-  m_Name: Square
+  m_Name: PinkSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
