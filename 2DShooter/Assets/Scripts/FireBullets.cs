@@ -7,6 +7,7 @@ public class FireBullets : MonoBehaviour
    //Operation Bullets
    public Transform FirePoint;
    public GameObject BulletPrefab;
+   public GameObject ShootEffectPrefab;
 
    public float BulletForce = 20f;
 
@@ -27,6 +28,9 @@ public class FireBullets : MonoBehaviour
         GameObject Bullet = Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
         Rigidbody2D rb = Bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(FirePoint.up * BulletForce, ForceMode2D.Impulse);
+
+        //Instantiate Fire Effect
+        GameObject ShootEffect = Instantiate(ShootEffectPrefab, FirePoint.position, FirePoint.rotation);
     }
 }
 
