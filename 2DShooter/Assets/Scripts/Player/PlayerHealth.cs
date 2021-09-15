@@ -17,13 +17,22 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetMaxHealth(MaxHealth);
     }
 
-    void Update()
+    //When a projectile bullet collides with the Player
+    void OnCollisionEnter2D(Collision2D Collision)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+       if(Collision.gameObject.tag.Equals("Projectile"))
         {
             TakeDamage(1);
         }
     }
+
+    //void Update()
+    //{
+      //  if(Collision.gameObject.tag.Equals("Bullet"))
+      //  {
+          //  TakeDamage(1);
+        //}
+   // }
 
     void TakeDamage(int Damage)
     {
@@ -31,4 +40,6 @@ public class PlayerHealth : MonoBehaviour
 
         HealthBar.SetHealth(CurrentHealth);
     }
+
+    
 }

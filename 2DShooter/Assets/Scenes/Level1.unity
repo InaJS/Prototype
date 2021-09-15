@@ -946,8 +946,9 @@ GameObject:
   - component: {fileID: 360672175}
   - component: {fileID: 360672174}
   - component: {fileID: 360672178}
+  - component: {fileID: 360672179}
   m_Layer: 0
-  m_Name: BlueSquare
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1083,22 @@ MonoBehaviour:
   retreatDistance: 10
   startTimeBetweenShots: 2
   projectile: {fileID: 1040032994097575666, guid: 3341e19e965b37e4d9675f114fe87db7, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 727742423}
+--- !u!114 &360672179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360672173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755128ff1eddba147b0d2936bc595009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 1
+  CurrentHealth: 0
+  HealthBar: {fileID: 0}
 --- !u!1 &415235075
 GameObject:
   m_ObjectHideFlags: 0

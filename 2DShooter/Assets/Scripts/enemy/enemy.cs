@@ -15,6 +15,8 @@ public class enemy : MonoBehaviour
     public GameObject projectile;
     public Transform player;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +50,27 @@ public class enemy : MonoBehaviour
         {
             timeBetweenShots -= Time.deltaTime;
         }
+    
     }
+
+    //Ina has added this.
+    void OnCollisionEnter2D (Collision2D Collision)
+    {
+        if(Collision.gameObject.tag.Equals("Bullet"))
+        {
+            Score.ScoreValue += 1;
+            //Destroy(other.gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+    if (other.CompareTag("Enemy"))  
+    {
+        // Destroy the thing tagged enemy, not youself
+        Destroy(other.gameObject);
+
+        // Could still destroy the bullet itself as well
+        Destroy (gameObject);
+    }
+}
 }
