@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 360672176}
   - component: {fileID: 360672175}
   - component: {fileID: 360672174}
+  - component: {fileID: 360672178}
   m_Layer: 0
   m_Name: BlueSquare
   m_TagString: Untagged
@@ -1064,6 +1065,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &360672178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360672173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c116cbd72f114f4989ef4ac5bfd33ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  stoppingDistance: 4
+  retreatDistance: 10
+  startTimeBetweenShots: 2
+  projectile: {fileID: 1040032994097575666, guid: 3341e19e965b37e4d9675f114fe87db7, type: 3}
+  player: {fileID: 0}
 --- !u!1 &415235075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,7 +2324,7 @@ GameObject:
   - component: {fileID: 727742424}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
