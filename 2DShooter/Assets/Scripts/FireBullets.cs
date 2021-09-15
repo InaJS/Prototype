@@ -31,6 +31,7 @@ public class FireBullets : MonoBehaviour
 
         //Instantiate Fire Effect
         GameObject ShootEffect = Instantiate(ShootEffectPrefab, FirePoint.position, FirePoint.rotation);
+        Destroy(ShootEffect, 1f);
     }
 }
 
