@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     
     public int MaxHealth = 10;
     public int CurrentHealth;
+    public Transform CheckPnt;
+    GameObject Player;
 
     public HealthBar HealthBar;
 
@@ -29,6 +32,8 @@ public class PlayerHealth : MonoBehaviour
          if(CurrentHealth <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Player.transform.position = CheckPnt.position;
         }
     }
 
