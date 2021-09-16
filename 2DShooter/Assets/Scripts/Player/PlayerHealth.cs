@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int CurrentHealth;
     public Transform CheckPnt;
     GameObject Player;
+    public Vector3 RespawnPoint;
 
     public HealthBar HealthBar;
 
@@ -33,8 +34,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Player.transform.position = CheckPnt.position;
+            Score.ScoreValue = 0;
+            //Player.transform.position = CheckPnt.position;
+            //transform.position = RespawnPoint;
         }
+        //if(Collision.gameObject.tag.Equals("CheckPoint"))
+        //{
+         //   RespawnPoint = Collision.transform.position;
+        //}
     }
 
     void TakeDamage(int Damage)

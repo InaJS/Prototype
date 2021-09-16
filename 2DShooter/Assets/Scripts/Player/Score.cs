@@ -23,9 +23,10 @@ public class Score : MonoBehaviour
     {
         Points.text = "Score: " + ScoreValue;
 
-        if(ScoreValue >= 25)
+        if(ScoreValue >= 30)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            ScoreValue = 0;
         }
     }
 }
