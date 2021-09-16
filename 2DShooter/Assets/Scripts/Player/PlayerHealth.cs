@@ -20,26 +20,24 @@ public class PlayerHealth : MonoBehaviour
     //When a projectile bullet collides with the Player
     void OnCollisionEnter2D(Collision2D Collision)
     {
-       if(Collision.gameObject.tag.Equals("Projectile"))
+       if(Collision.gameObject.tag.Equals("EnemyBullet"))
         {
             TakeDamage(1);
+        }   
+
+    
+         if(CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
-    //void Update()
-    //{
-      //  if(Collision.gameObject.tag.Equals("Bullet"))
-      //  {
-          //  TakeDamage(1);
-        //}
-   // }
-
     void TakeDamage(int Damage)
     {
+        
         CurrentHealth -= Damage;
 
         HealthBar.SetHealth(CurrentHealth);
-    }
 
-    
+    } 
 }

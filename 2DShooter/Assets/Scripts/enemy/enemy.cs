@@ -14,6 +14,11 @@ public class enemy : MonoBehaviour
 
     public GameObject projectile;
     public Transform player;
+    public Transform FirePoint;
+    public GameObject ShootEffectPrefab;
+
+    public float BulletForce = 20f;
+
 
     
 
@@ -41,36 +46,45 @@ public class enemy : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
         }
 
-        if(timeBetweenShots <= 0)
-        {
-            Instantiate(projectile, transform.position, Quaternion.identity);
-            timeBetweenShots = startTimeBetweenShots;
-        }
-        else
-        {
-            timeBetweenShots -= Time.deltaTime;
-        }
-    
-    }
+      //  if(timeBetweenShots <= 0)
+        //{
+         //   Instantiate(projectile, transform.position, Quaternion.identity);
+      //      timeBetweenShots = startTimeBetweenShots;
+        //}
+      //  else
+        //{
+        //    timeBetweenShots -= Time.deltaTime;
+        //}
+
+   //Ina
+       // GameObject Bullet = Instantiate(projectile, FirePoint.position, FirePoint.rotation);
+       // Rigidbody2D rb = Bullet.GetComponent<Rigidbody2D>();
+     //   rb.AddForce(FirePoint.up * BulletForce, ForceMode2D.Impulse);
+
+        //Instantiate Fire Effect
+       
+    //}
 
     //Ina has added this.
-    void OnCollisionEnter2D (Collision2D Collision)
-    {
-        if(Collision.gameObject.tag.Equals("Bullet"))
-        {
-            Score.ScoreValue += 1;
-            //Destroy(other.gameObject);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-    if (other.CompareTag("Enemy"))  
-    {
+   // void OnCollisionEnter2D (Collision2D Collision)
+   // {
+     //   if(Collision.gameObject.tag.Equals("Bullet"))
+     //   {
+       //     Score.ScoreValue += 1;
+       //     //Destroy(other.gameObject);
+   //     }
+    //}
+
+   // private void OnTriggerEnter(Collider other)
+    //{
+    //if (other.CompareTag("Enemy"))  
+   // {
         // Destroy the thing tagged enemy, not youself
-        Destroy(other.gameObject);
+     //   Destroy(other.gameObject);
 
         // Could still destroy the bullet itself as well
-        Destroy (gameObject);
-    }
+       // Destroy (gameObject);
+   // }
+    
 }
 }

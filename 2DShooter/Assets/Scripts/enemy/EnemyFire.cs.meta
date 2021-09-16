@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c0cd60b1d68a4b4490d631a76d58a62
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - projectile: {fileID: 1040032994097575666, guid: 3341e19e965b37e4d9675f114fe87db7, type: 3}
+  - player: {instanceID: 0}
+  - EnemyFirePoint: {instanceID: 0}
+  - ShootEffectPrefab: {fileID: 5815305210991006390, guid: 96ff6f3bdfae9214bbc2a66f4d4f756a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

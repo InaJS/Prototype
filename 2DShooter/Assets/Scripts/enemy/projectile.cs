@@ -9,6 +9,7 @@ public class projectile : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    public GameObject HitEffect;
 
 
     // Start is called before the first frame update
@@ -32,6 +33,7 @@ public class projectile : MonoBehaviour
 
         void OnTriggerEnter2D(Collider2D other)
         {
+        
             if(other.CompareTag("Player"))
             {
             DestroyProjectile();
@@ -40,6 +42,15 @@ public class projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
+        Destroy(gameObject);
+    }
+
+     
+    void OnCollisionEnter2D(Collision2D Collision)
+    {
+        GameObject Effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
+        //Quaternion.Identity being the default rotation.
+        Destroy(Effect, 1f);
         Destroy(gameObject);
     }
 }
