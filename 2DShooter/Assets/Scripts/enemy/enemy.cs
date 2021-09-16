@@ -66,25 +66,13 @@ public class enemy : MonoBehaviour
     //}
 
     //Ina has added this.
-   // void OnCollisionEnter2D (Collision2D Collision)
-   // {
-     //   if(Collision.gameObject.tag.Equals("Bullet"))
-     //   {
-       //     Score.ScoreValue += 1;
-       //     //Destroy(other.gameObject);
-   //     }
-    //}
+   void OnCollisionEnter2D (Collision2D Collision)
+   {
+    if(Collision.gameObject.tag.Equals("Bullet"))
+    {
+      Score.ScoreValue += 1;
+    }
+  }
 
-   // private void OnTriggerEnter(Collider other)
-    //{
-    //if (other.CompareTag("Enemy"))  
-   // {
-        // Destroy the thing tagged enemy, not youself
-     //   Destroy(other.gameObject);
-
-        // Could still destroy the bullet itself as well
-       // Destroy (gameObject);
-   // }
-    
 }
 }

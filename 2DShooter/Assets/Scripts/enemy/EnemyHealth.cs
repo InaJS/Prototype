@@ -28,6 +28,7 @@ public class EnemyHealth : MonoBehaviour
          if(CurrentHealth <= 0)
         {
             Destroy(gameObject);
+            Score.ScoreValue += 1;
         }
     }  
 }
