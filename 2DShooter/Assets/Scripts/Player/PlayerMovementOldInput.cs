@@ -9,6 +9,7 @@ public class PlayerMovementOldInput : MonoBehaviour
     public float MoveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
+   
 
     //Camera to aim with mouse
     public Camera cam;
@@ -22,7 +23,9 @@ public class PlayerMovementOldInput : MonoBehaviour
 
         //Look for mouse position
         MousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+          
     }
+
 
     void FixedUpdate()
     {
@@ -36,6 +39,8 @@ public class PlayerMovementOldInput : MonoBehaviour
         float Angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg -90f;
         rb.rotation = Angle;
     }
+
+       
 }
 
 //Thanks to Brackeys.

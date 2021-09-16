@@ -16,7 +16,7 @@ public class CheckPoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("CHECK!");
-            Player.transform.position = CheckPnt.position;
+        
         }
     }
     
