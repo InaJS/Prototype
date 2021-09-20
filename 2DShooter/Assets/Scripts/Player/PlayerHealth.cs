@@ -29,6 +29,20 @@ public class PlayerHealth : MonoBehaviour
             TakeDamage(1);
         }   
 
+        void GiveHeal(int Heal)
+    {
+        
+        CurrentHealth += Heal;
+
+        HealthBar.SetHealth(CurrentHealth);
+
+    }
+        if(Collision.gameObject.tag.Equals("HealthItem"))
+        {
+            GiveHeal(1);
+            CurrentHealth = MaxHealth;
+        
+        }   
     
          if(CurrentHealth <= 0)
         {
