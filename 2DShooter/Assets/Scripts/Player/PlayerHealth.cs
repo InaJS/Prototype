@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Transform CheckPnt;
     GameObject Player;
     public Vector3 RespawnPoint;
-
+    public GameObject ExplosionEffect;
     public HealthBar HealthBar;
 
     void start()
@@ -32,16 +32,14 @@ public class PlayerHealth : MonoBehaviour
     
          if(CurrentHealth <= 0)
         {
+            GameObject ExpEFF = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Score.ScoreValue = 0;
-            //Player.transform.position = CheckPnt.position;
-            //transform.position = RespawnPoint;
+            
         }
-        //if(Collision.gameObject.tag.Equals("CheckPoint"))
-        //{
-         //   RespawnPoint = Collision.transform.position;
-        //}
+        
     }
 
     void TakeDamage(int Damage)
@@ -51,5 +49,8 @@ public class PlayerHealth : MonoBehaviour
 
         HealthBar.SetHealth(CurrentHealth);
 
-    } 
+    }
+    
+     
 }
+

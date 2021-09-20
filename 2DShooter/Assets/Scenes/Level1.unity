@@ -6810,6 +6810,10 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 1047858090}
+    - target: {fileID: 4074790162337110678, guid: d706d280c03ffb94aba8a41d51a61490, type: 3}
+      propertyPath: ExplosionEffect
+      value: 
+      objectReference: {fileID: 684397634959275984, guid: a038238f241459a428471917a2aa73f4, type: 3}
     - target: {fileID: 4074790162337110685, guid: d706d280c03ffb94aba8a41d51a61490, type: 3}
       propertyPath: m_Name
       value: Player
