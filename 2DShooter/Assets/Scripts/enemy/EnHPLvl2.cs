@@ -6,6 +6,7 @@ public class EnHPLvl2: MonoBehaviour
 {
     public int MaxHealth = 10;
     public int CurrentHealth;
+    public GameObject ExplosionEffect;
 
     void start()
     {
@@ -27,6 +28,7 @@ public class EnHPLvl2: MonoBehaviour
 
          if(CurrentHealth <= 0)
         {
+            GameObject ExpEFF = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             Score.ScoreValue += 2;
         }
