@@ -9,6 +9,8 @@ public class PlayerMovementOldInput : MonoBehaviour
     public float MoveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
+    private Animator _Animator;
+    private float Speed;
    
 
     //Camera to aim with mouse
@@ -23,7 +25,8 @@ public class PlayerMovementOldInput : MonoBehaviour
 
         //Look for mouse position
         MousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-          
+        _Animator.SetFloat("Speed", Mathf.Abs(rb.velocity.normalized.x));
+        _Animator.SetFloat("Speed", Mathf.Abs(rb.velocity.normalized.y));
     }
 
 

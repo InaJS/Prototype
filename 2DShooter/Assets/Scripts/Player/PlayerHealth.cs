@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         {
             GameObject ExpEFF = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
-            
+            Wait(5);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Score.ScoreValue = 0;
             
@@ -51,6 +51,11 @@ public class PlayerHealth : MonoBehaviour
 
     }
     
-     
+    //Add a delay
+    IEnumerator Wait(float WaitTime)
+    { //creating a function
+        yield return new WaitForSeconds(WaitTime); 
+        //tell unity to wait!!
+    }    
 }
 
