@@ -9,6 +9,7 @@ TagManager:
   - EnemyBullet
   - GM
   - Checkpoint
+  - HealthItem
   layers:
   - Default
   - TransparentFX
