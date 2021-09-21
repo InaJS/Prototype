@@ -2644,6 +2644,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &823678657 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3399309146586249667, guid: d706d280c03ffb94aba8a41d51a61490, type: 3}
+  m_PrefabInstance: {fileID: 4074790163056454984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &854977135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7112,7 +7117,7 @@ PrefabInstance:
     - target: {fileID: 4074790162337110676, guid: d706d280c03ffb94aba8a41d51a61490, type: 3}
       propertyPath: Animator
       value: 
-      objectReference: {fileID: 666183470}
+      objectReference: {fileID: 823678657}
     - target: {fileID: 4074790162337110678, guid: d706d280c03ffb94aba8a41d51a61490, type: 3}
       propertyPath: HealthBar
       value: 
