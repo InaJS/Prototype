@@ -11,8 +11,7 @@ public class PlayerMovementOldInput : MonoBehaviour
     Vector2 movement;
     public Animator Animator;
     private float Speed;
-    float HorizontalMove = 5f;
-    float VerticalMove = 5f;
+   
    
 
     //Camera to aim with mouse
@@ -30,7 +29,7 @@ public class PlayerMovementOldInput : MonoBehaviour
         
         //Animation
         Animator.SetFloat("Speed", Mathf.Abs(movement.x));
-        Animator.SetFloat("Speed", Mathf.Abs(movement.y));
+        Animator.SetFloat("SpeedY", Mathf.Abs(movement.y));
     }
 
 
