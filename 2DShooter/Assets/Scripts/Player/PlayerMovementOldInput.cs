@@ -28,8 +28,9 @@ public class PlayerMovementOldInput : MonoBehaviour
         MousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
         //Animation
+        //Animator.SetFloat("Speed", Mathf.Abs(movement)); //"Cannot convert from 'UnityEngine.Vector2 to 'float'"
         Animator.SetFloat("Speed", Mathf.Abs(movement.x));
-        Animator.SetFloat("SpeedY", Mathf.Abs(movement.y));
+        Animator.SetFloat("Speed", Mathf.Abs(movement.y));
     }
 
 
