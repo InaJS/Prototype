@@ -137,8 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c53e0289f83e42ac6486a991e9abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 14
   HitEffect: {fileID: 5678255723271583690, guid: 6cc2ea832e08a4f42831774fa0e57fca, type: 3}
+  body: {fileID: 0}
 --- !u!82 &-4987778134215628517
 AudioSource:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //todo bullets tagged player???
-        //if(other.CompareTag("Player"))
+        if(other.CompareTag("Player"))
          {
         DestroyProjectile();
           }
