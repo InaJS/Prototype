@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -105}
+  m_AnchoredPosition: {x: 0, y: -147}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4835552
@@ -593,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -69.7}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -105.4}
+  m_SizeDelta: {x: 160, y: 41.0989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436359261
 MonoBehaviour:
@@ -618,20 +618,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
-    m_MaxSize: 40
+    m_MaxSize: 87
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "You saved the Whatever-Galaxy from the ferocious cube ships that wreacked
+  m_Text: "You saved the Whatever-Galaxy from the ferocious cube ships that\nwreaked
     havoc across the Galaxy.\nThank you brave traveler. \n(Unless you did this to
-    just destroy some ships without any heroic intent, 'cause that's kinda messed
+    just destroy some ships without any heroic intent, \n'cause that's kinda messed
     up, yo.)"
 --- !u!222 &436359262
 CanvasRenderer:
@@ -677,7 +677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
+  m_AnchoredPosition: {x: 0, y: -182}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539162182
@@ -1010,8 +1010,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244024499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 599, y: 302, z: 0}
-  m_LocalScale: {x: 76.014244, y: 69.061424, z: 87.00756}
+  m_LocalPosition: {x: 733, y: 279, z: 0}
+  m_LocalScale: {x: 100.10316, y: 82.314316, z: 87.00756}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1527,8 +1527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 68}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 128.23798}
+  m_SizeDelta: {x: 160, y: 115.1593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826018511
 MonoBehaviour:
