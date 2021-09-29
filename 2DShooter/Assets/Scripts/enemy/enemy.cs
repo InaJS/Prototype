@@ -33,6 +33,7 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform != null)
         if(Vector2.Distance(transform.position, player.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
@@ -66,13 +67,13 @@ public class enemy : MonoBehaviour
     //}
 
     //Ina has added this.
-   void OnCollisionEnter2D (Collision2D Collision)
+  /* void OnCollisionEnter2D (Collision2D Collision)
    {
     if(Collision.gameObject.tag.Equals("Bullet"))
     {
       Score.ScoreValue += 1;
     }
-  }
+  }*/
 
 }
 }
