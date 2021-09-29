@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public Vector3 RespawnPoint;
     public GameObject ExplosionEffect;
     public HealthBar HealthBar;
+    public GameObject PlayerHitEffect;
 
     void start()
     {
@@ -27,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
        if(Collision.gameObject.tag.Equals("EnemyBullet"))
         {
             TakeDamage(1);
+            GameObject PlayerHit = Instantiate(PlayerHitEffect, transform.position, Quaternion.identity);
         }   
 
         void GiveHeal(int Heal)
