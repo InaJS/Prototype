@@ -1683,8 +1683,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 620570313
-  m_SortingLayer: -2
+  m_SortingLayerID: 874713477
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fcfb35e1eac53c747b9b94ed97968390, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2379,7 +2379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644588230}
   - component: {fileID: 644588231}
-  - component: {fileID: 644588232}
+  - component: {fileID: 644588233}
   m_Layer: 0
   m_Name: Planet1
   m_TagString: Untagged
@@ -2452,27 +2452,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &644588232
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!58 &644588233
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644588229}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.030907923, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.7446
 --- !u!1 &679414729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,7 +2831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742202338}
   - component: {fileID: 742202340}
-  - component: {fileID: 742202339}
+  - component: {fileID: 742202341}
   m_Layer: 0
   m_Name: Planet2
   m_TagString: Untagged
@@ -2858,27 +2853,6 @@ Transform:
   m_Father: {fileID: 176555145}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &742202339
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742202337}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &742202340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2930,6 +2904,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &742202341
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742202337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.026231999, y: 0.0000018322273}
+  serializedVersion: 2
+  m_Radius: 3.7716155
 --- !u!1001 &754121550
 PrefabInstance:
   m_ObjectHideFlags: 0

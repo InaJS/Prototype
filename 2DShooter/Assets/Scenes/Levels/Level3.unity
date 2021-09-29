@@ -281,9 +281,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009646479, y: -0.027868647}
   serializedVersion: 2
-  m_Radius: 4.2699995
+  m_Radius: 3.7391682
 --- !u!1001 &185667583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1770,7 +1770,7 @@ Transform:
   - {fileID: 1676393840}
   - {fileID: 961611120}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283705526
 GameObject:
