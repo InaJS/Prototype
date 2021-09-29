@@ -50,11 +50,11 @@ TagManager:
   - name: Midground
     uniqueID: 620570313
     locked: 0
-  - name: Player
-    uniqueID: 1587508459
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1587508459
     locked: 0
   - name: Foreground
     uniqueID: 1325040433

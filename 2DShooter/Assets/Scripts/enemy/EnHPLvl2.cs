@@ -19,6 +19,7 @@ public class EnHPLvl2: MonoBehaviour
        if(Collision.gameObject.tag.Equals("Bullet"))
         {
             TakeDamage(1);
+            FindObjectOfType<AudioManager>().Play("HitSound");
         }   
     }
 

@@ -29,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(1);
             GameObject PlayerHit = Instantiate(PlayerHitEffect, transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("PlayerHurt");
         }   
 
         void GiveHeal(int Heal)
