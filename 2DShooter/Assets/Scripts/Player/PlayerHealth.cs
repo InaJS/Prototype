@@ -51,9 +51,9 @@ public class PlayerHealth : MonoBehaviour
             GameObject ExpEFF = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             Wait(5);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Score.ScoreValue = 0;
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
         
     }

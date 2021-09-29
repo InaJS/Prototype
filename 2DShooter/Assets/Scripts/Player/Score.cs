@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
 
         if(ScoreValue >= 30)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
             ScoreValue = 0;
         }
     }
