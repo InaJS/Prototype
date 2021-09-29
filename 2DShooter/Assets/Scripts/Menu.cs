@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 //To load a new scene, UnityEngine.SceneManagement needs to be in use.
 public class Menu : MonoBehaviour
 {
-   public void Play()
+
+    [SerializeField] GameObject pauseMenu;
+
+    public static bool GameIsPaused = false;
+
+    public void Play()
     {
         SceneManager.LoadScene("Level1");
 
@@ -55,5 +60,34 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
 
+    }
+
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 }

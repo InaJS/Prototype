@@ -31,6 +31,11 @@ public class PlayerMovementOldInput : MonoBehaviour
         //Animator.SetFloat("Speed", Mathf.Abs(movement)); //"Cannot convert from 'UnityEngine.Vector2 to 'float'"
         Animator.SetFloat("SpeedY", Mathf.Abs(movement.x));
         Animator.SetFloat("Speed", Mathf.Abs(movement.y));
+
+      /*  if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GetComponent<Menu>().Pause();
+        }*/
     }
 
 

@@ -34,6 +34,24 @@ public class AudioManager : MonoBehaviour
 
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
+
+		/*if (Application.loadedLevelName == "MainMenu")
+		{
+			FindObjectOfType<AudioManager>().StopPlaying("LevelMusic");
+			FindObjectOfType<AudioManager>().Play("MenuMusic");
+		}
+
+		else if (Application.loadedLevelName == "Level1")
+		{
+			FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
+			FindObjectOfType<AudioManager>().Play("LevelMusic");
+		}
+
+		else if (Application.loadedLevelName == "End")
+		{
+			FindObjectOfType<AudioManager>().StopPlaying("LevelMusic");
+			FindObjectOfType<AudioManager>().Play("MenuMusic");
+		}*/
 	}
 
 	public void Play(string sound)
@@ -66,12 +84,25 @@ public class AudioManager : MonoBehaviour
 		s.source.Stop();
 	}
 
-	//For when you want to destroy the audio manager in a scene and start playing different music
-	/*void Update()
-	{
-		if (Application.loadedLevelName == "Insert Scene Name for different Music")
-		{
-			Destroy(this.gameObject);
+    //For when you want to destroy the audio manager in a scene and start playing different music
+    /* void Update()
+     {
+         if (Application.loadedLevelName == "Level1")
+         {
+             Destroy(this.gameObject);
+         }
+     }*/
+
+   /* void Start()
+    {
+		if (Application.loadedLevelName == "MainMenu")
+        {
+			FindObjectOfType<AudioManager>().Play("MenuMusic");
 		}
-	}*/
+
+		else if (Application.loadedLevelName == "Level1")
+        {
+			FindObjectOfType<AudioManager>().Play("LevelMusic");
+		}
+    }*/
 }
