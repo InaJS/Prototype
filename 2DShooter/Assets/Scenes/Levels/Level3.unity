@@ -1751,6 +1751,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2461271958863119371, guid: a3139348234f81245bf1b45902290145, type: 3}
+      propertyPath: m_Size.x
+      value: 3.267991
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461271958863119371, guid: a3139348234f81245bf1b45902290145, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.1568448
+      objectReference: {fileID: 0}
     - target: {fileID: 2461271958863119373, guid: a3139348234f81245bf1b45902290145, type: 3}
       propertyPath: m_Name
       value: Wall
@@ -2251,6 +2259,10 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 1856001860}
+    - target: {fileID: 7199930905151397948, guid: a97f4fb82bf1ea6488c3b52697d345ee, type: 3}
+      propertyPath: PlayerHitEffect
+      value: 
+      objectReference: {fileID: 5676166615107469073, guid: 7c2f611932302064dab963acf817d615, type: 3}
     - target: {fileID: 7199930905151397950, guid: a97f4fb82bf1ea6488c3b52697d345ee, type: 3}
       propertyPath: cam
       value: 
