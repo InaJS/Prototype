@@ -33,4 +33,27 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Rules");
     }
+
+    public void RespawnLvl1()
+    {
+        SceneManager.LoadScene("Level1");
+
+    }
+
+    public void RespawnLvl2()
+    {
+        SceneManager.LoadScene("Level2");
+     }
+
+     public void RespawnLvl3()
+    {
+        SceneManager.LoadScene("Level3");
+
+    }
+
+     public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
 }
