@@ -3768,7 +3768,7 @@ PrefabInstance:
     - target: {fileID: 7199930905151397948, guid: a97f4fb82bf1ea6488c3b52697d345ee, type: 3}
       propertyPath: HealthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1804442396}
     - target: {fileID: 7199930905151397948, guid: a97f4fb82bf1ea6488c3b52697d345ee, type: 3}
       propertyPath: PlayerHitEffect
       value: 
